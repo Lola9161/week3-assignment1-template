@@ -7,6 +7,7 @@ from utils import str_to_bool
 import pytest
 
 
+
 def test_str_to_bool_one():
     result = str_to_bool("1")
     assert result is True
