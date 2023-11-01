@@ -8,6 +8,8 @@ def str_to_bool(val):
     """
     true_vals = ['yes', 'y', '', '1']
     false_vals = ['no', 'n', '0']
+    if val is None:
+        raise RuntimeError
     try:
         val = val.lower()
     except AttributeError:
